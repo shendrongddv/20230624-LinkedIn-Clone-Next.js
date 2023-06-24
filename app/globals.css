@@ -5,3 +5,15 @@
 .container {
   @apply mx-auto max-w-[1128px];
 }
+
+.btn {
+  @apply text-clip rounded-full border-2 border-transparent bg-transparent px-5 py-2 text-sm font-medium md:text-base;
+}
+
+.btn-link {
+  @apply text-black/75 hover:border-neutral-50 hover:bg-neutral-50;
+}
+
+.btn-primary-outlane {
+  @apply border-[#0a66c2] text-[#0a66c2] hover:bg-[#0a66c2] hover:text-white;
+}
