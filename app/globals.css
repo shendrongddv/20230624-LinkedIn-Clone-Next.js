@@ -6,14 +6,33 @@
   @apply mx-auto max-w-[1128px];
 }
 
+.h2 {
+  @apply text-3xl font-light md:text-5xl md:leading-snug;
+}
+
 .btn {
-  @apply text-clip rounded-full border-2 border-transparent bg-transparent px-5 py-2 text-sm font-medium md:text-base;
+  @apply rounded-full border-[1px] border-transparent bg-transparent px-5 py-2 text-base font-medium hover:bg-black/5;
 }
 
 .btn-link {
   @apply text-black/75 hover:border-neutral-50 hover:bg-neutral-50;
 }
 
-.btn-primary-outlane {
-  @apply border-[#0a66c2] text-[#0a66c2] hover:bg-[#0a66c2] hover:text-white;
+.btn-dark-outline {
+  @apply border-black/75 bg-transparent text-black/75;
+}
+
+.btn-primary {
+  @apply border-[#0a66c2] bg-[#0a66c2] text-white hover:border-[#004182] hover:bg-[#004182];
+}
+
+.btn-primary-outline {
+  @apply border-[#0a66c2] bg-transparent text-[#0a66c2];
+}
+
+.my-gradient-1 {
+  background-image: url(/bg-1.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
 }

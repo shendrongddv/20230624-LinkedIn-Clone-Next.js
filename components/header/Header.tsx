@@ -90,7 +90,7 @@ const Header = () => {
                 <span className="hidden md:flex">Bergabung Sekarang</span>
                 <span className="md:hidden">Daftar</span>
               </Link>
-              <Link href="/" className="btn btn-primary-outlane">
+              <Link href="/" className="btn btn-primary-outline">
                 Login
               </Link>
             </div>
