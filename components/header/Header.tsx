@@ -87,7 +87,8 @@ const Header = () => {
 
             <div className="flex items-center justify-center gap-2 pl-6 md:gap-4">
               <Link href="/" className="btn btn-link">
-                Bergabung Sekarang
+                <span className="hidden md:flex">Bergabung Sekarang</span>
+                <span className="md:hidden">Daftar</span>
               </Link>
               <Link href="/" className="btn btn-primary-outlane">
                 Login
