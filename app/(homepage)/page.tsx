@@ -1,3 +1,4 @@
+import HomeSlider from "@/components/home-slider";
 import JobCategory from "@/components/job-category";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -73,6 +74,14 @@ export default function Homepage() {
           </Link>
         </div>
       </section>
+
+      {/* # */}
+      <section className="py-16 md:px-4">
+        <div className="container">
+          <HomeSlider />
+        </div>
+      </section>
+      {/* ./ # */}
 
       {/* Benefits */}
       <section className="px-4 py-12">

@@ -414,26 +414,23 @@ export const contentJobCategory = [
 ];
 
 // featureExplanation
-export const featureExplanation = [
+export const contentBenefits = [
   {
-    id: "2b975ccf-5443-551d-84cd-8163382cd7c5",
-    premise: "Beri tahu orang lain bahwa Anda terbuka untuk bekerja",
-    detail:
-      "Dengan fitur Terbuka untuk Bekerja, Anda dapat secara rahasia memberi tahu perekrut atau membagikan kepada komunitas LinkedIn bahwa Anda sedang mencari peluang kerja baru.",
-    img: "1.png",
+    id: 1,
+    title: "Beri tahu orang lain bahwa Anda terbuka untuk bekerja",
+    body: "Dengan fitur Terbuka untuk Bekerja, Anda dapat secara rahasia memberi tahu perekrut atau membagikan kepada komunitas LinkedIn bahwa Anda sedang mencari peluang kerja baru.",
+    media: "1.png",
   },
   {
-    id: "5f14257e-61d7-5821-8454-4f3287eaf84e",
-    premise: "Diskusi hari ini bisa menjadi peluang di hari esok",
-    detail:
-      "Mengirim pesan ke orang yang Anda kenal adalah cara yang baik untuk memperkuat relasi saat Anda memgambil langkah karier berikutnya.",
-    img: "2.png",
+    id: 2,
+    title: "Diskusi hari ini bisa menjadi peluang di hari esok",
+    body: "Mengirim pesan ke orang yang Anda kenal adalah cara yang baik untuk memperkuat relasi saat Anda memgambil langkah karier berikutnya.",
+    media: "2.png",
   },
   {
-    id: "8d76f5fe-a38f-5572-ac37-ba5b8016473c",
-    premise: "Ikuti perkembangan di industri Anda",
-    detail:
-      "Mulai dari Video siaran langsung, sampai cerita, buletin, dan banyak lagi, LinkedIn dilengkapi berbagai cara untuk mengikuti perkembangan diskusi terbaru di industri Anda.",
-    img: "3.png",
+    id: 3,
+    title: "Ikuti perkembangan di industri Anda",
+    body: "Mulai dari Video siaran langsung, sampai cerita, buletin, dan banyak lagi, LinkedIn dilengkapi berbagai cara untuk mengikuti perkembangan diskusi terbaru di industri Anda.",
+    media: "3.png",
   },
 ];
