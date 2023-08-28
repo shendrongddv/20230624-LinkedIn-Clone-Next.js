@@ -1,11 +1,8 @@
-import Link from "next/link";
-
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "../ui/button";
-import { Separator } from "../ui/separator";
-
 // Components
 import { SiteLogoNavbar } from "../site-logo";
+import { NavButton } from "./nav-button";
+import { NavLists } from "./nav-item";
+import { MobileToggle } from "./mobile-toggle";
 
 const HeaderMain = () => {
   return (
@@ -15,66 +12,15 @@ const HeaderMain = () => {
           {/* Site Logo */}
           <SiteLogoNavbar />
 
-          {/* Col */}
-          <div className="hidden items-center justify-center gap-2 divide-x md:flex">
-            <div className="flex items-center justify-center gap-2">
-              {/* # */}
-              <Link
-                href="/"
-                className={cn(
-                  buttonVariants({
-                    variant: "ghost",
-                    size: "sm",
-                    className: "rounded-full",
-                  }),
-                )}
-              >
-                Bergabung Sekarang
-              </Link>
+          {/* Desktop */}
+          <div className="hidden items-center justify-center gap-4 md:flex">
+            <NavLists />
+            <NavButton />
+          </div>
 
-              {/* # */}
-              <Link
-                href="/"
-                className={cn(
-                  buttonVariants({
-                    variant: "outline",
-                    size: "sm",
-                    className: "rounded-full",
-                  }),
-                )}
-              >
-                Login
-              </Link>
-            </div>
-            <div className="flex items-center justify-center gap-2 pl-2">
-              {/* # */}
-              <Link
-                href="/"
-                className={cn(
-                  buttonVariants({
-                    variant: "ghost",
-                    size: "sm",
-                    className: "rounded-full",
-                  }),
-                )}
-              >
-                Bergabung Sekarang
-              </Link>
-
-              {/* # */}
-              <Link
-                href="/"
-                className={cn(
-                  buttonVariants({
-                    variant: "outline",
-                    size: "sm",
-                    className: "rounded-full",
-                  }),
-                )}
-              >
-                Login
-              </Link>
-            </div>
+          {/* Mobile */}
+          <div className="flex items-center justify-center gap-2 md:hidden">
+            <MobileToggle />
           </div>
         </div>
       </div>

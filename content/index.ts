@@ -1,3 +1,37 @@
+import { Briefcase, MonitorPlay, Newspaper, User } from "lucide-react";
+
+// NavMenu
+export const contentNavMenu = [
+  {
+    id: 1,
+    label: "Artikel",
+    url: "/",
+    icon: Newspaper,
+    media: null,
+  },
+  {
+    id: 2,
+    label: "Orang",
+    url: "/",
+    icon: User,
+    media: null,
+  },
+  {
+    id: 3,
+    label: "Learning",
+    url: "/",
+    icon: MonitorPlay,
+    media: null,
+  },
+  {
+    id: 4,
+    label: "Pekerjaan",
+    url: "/",
+    icon: Briefcase,
+    media: null,
+  },
+];
+
 // footerMenu
 export const contentFooterMain = [
   {
