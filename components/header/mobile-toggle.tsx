@@ -19,7 +19,7 @@ export function MobileToggle() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="secondary" size="icon">
+        <Button variant="secondary" size="sm" className="aspect-1">
           <Menu className="h-4 w-4" />
         </Button>
       </SheetTrigger>
