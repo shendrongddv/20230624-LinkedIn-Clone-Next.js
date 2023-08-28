@@ -231,7 +231,7 @@ export const contentFooterBottom = [
 ];
 
 // jobCategories
-export const jobCategories = [
+export const contentJobCategory = [
   {
     id: "bc63afad-2b43-5dd1-8d0e-da9cb7cf6e6e",
     label: "Rekayasa",

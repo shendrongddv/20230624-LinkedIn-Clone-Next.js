@@ -11,7 +11,7 @@ export const SiteLogoNavbar = () => {
         alt="LinkedIn"
         width={135}
         height={34}
-        className="h-7 w-auto md:h-8"
+        className="h-6 w-auto"
       />
     </Link>
   );
@@ -26,6 +26,20 @@ export const SiteLogoFooterMain = () => {
         width={135}
         height={34}
         className="h-6 w-auto"
+      />
+    </Link>
+  );
+};
+
+export const SiteLogoFooterBottom = () => {
+  return (
+    <Link href="/">
+      <Image
+        src={imgLogo}
+        alt="LinkedIn"
+        width={135}
+        height={34}
+        className="h-3 w-auto grayscale"
       />
     </Link>
   );

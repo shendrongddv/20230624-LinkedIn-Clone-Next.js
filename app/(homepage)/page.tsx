@@ -1,3 +1,4 @@
+import JobCategory from "@/components/job-category";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
@@ -7,20 +8,29 @@ import Link from "next/link";
 export default function Homepage() {
   return (
     <>
-      <section className="mx-auto flex h-screen max-w-3xl flex-col items-center justify-center gap-6 px-6 text-center">
-        <h1 className="h1 font-bold">Heading using Font Display</h1>
-        <h3 className="h3 font-semibold">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        </h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Exercitationem aspernatur tenetur accusantium, voluptates dolorum sint
-          modi laborum omnis, soluta excepturi, aliquam neque ut at.
-        </p>
-        <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">
-          Button
-        </button>
+      {/* Hero */}
+      <section className="px-4 py-16">
+        <div className="container flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+          {/* Col */}
+          <div className="space-y-4 md:w-6/12">
+            <h1 className="h1 font-light">
+              Temukan pekerjaan melalui komunitas
+            </h1>
+          </div>
+
+          {/* Col */}
+          <div className="md:w-5/12">
+            <Image
+              src="/hero.svg"
+              alt="Image"
+              width={720}
+              height={720}
+              className="h-auto w-full"
+            />
+          </div>
+        </div>
       </section>
+      {/* ./ Hero */}
 
       {/* Find Your jobs */}
       <section className="bg-slate-100 px-4 py-16">
@@ -37,6 +47,7 @@ export default function Homepage() {
             <span className="text-sm font-medium uppercase opacity-60">
               Saran Pencarian
             </span>
+            <JobCategory />
           </div>
         </div>
       </section>
