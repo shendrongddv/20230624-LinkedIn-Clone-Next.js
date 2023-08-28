@@ -1,5 +1,5 @@
 // footerMenu
-export const footerMenu = [
+export const contentFooterMain = [
   {
     id: 1,
     heading: "Umum",
@@ -182,7 +182,7 @@ export const footerMenu = [
 ];
 
 // footerMenuBottom
-export const footerMenuBottom = [
+export const contentFooterBottom = [
   {
     id: 1,
     label: "Tentang",
