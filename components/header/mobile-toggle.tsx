@@ -25,7 +25,7 @@ export function MobileToggle() {
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="flex h-screen w-4/5 flex-col gap-4 p-0"
+        className="flex h-full w-4/5 flex-col gap-4 p-0"
       >
         <div className="flex items-center border-b p-4">
           <SheetClose asChild>
