@@ -13,7 +13,7 @@ export default function Homepage() {
         <div className="container flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           {/* Col */}
           <div className="space-y-4 md:w-6/12">
-            <h1 className="h1 font-light">
+            <h1 className="h1 font-light text-accent-foreground">
               Temukan pekerjaan melalui komunitas
             </h1>
           </div>
