@@ -1,18 +1,16 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 
-const fontDisplay = Roboto({
+const fontDisplay = Inter({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-display",
 });
 
-const fontBody = Roboto({
+const fontBody = Inter({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-body",
 });
 

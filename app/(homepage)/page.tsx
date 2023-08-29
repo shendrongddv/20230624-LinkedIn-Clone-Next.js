@@ -1,11 +1,15 @@
-import HomeSlider from "@/components/home-slider";
-import JobCategory from "@/components/job-category";
-import LoginForm from "@/components/login-form";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+
+import { ChevronRight } from "lucide-react";
+
+// import LoginForm from "@/components/login-form";
+import JobCategory from "@/components/job-category";
+import HomeSlider from "@/components/home-slider";
+import { SelectTopic } from "@/components/select-topic";
 
 export default function Homepage() {
   return (
@@ -55,6 +59,7 @@ export default function Homepage() {
           </div>
         </div>
       </section>
+      {/* ./ Find Your jobs */}
 
       {/* Start Postings */}
       <section className="bg-[#F1ECE5] px-4 py-16">
@@ -77,6 +82,7 @@ export default function Homepage() {
           </Link>
         </div>
       </section>
+      {/* ./ Start Postings */}
 
       {/* # */}
       <section className="py-16 md:px-4">
@@ -86,17 +92,17 @@ export default function Homepage() {
       </section>
       {/* ./ # */}
 
-      {/* Benefits */}
+      {/* Help You With */}
       <section className="px-4 py-12">
         <div className="container flex flex-col gap-16 md:flex-row md:justify-between">
           {/* Col */}
-          <div className="space-y-4 md:w-5/12">
+          <div className="space-y-4 md:w-6/12">
             <Image
               src="/img-3.svg"
               alt="Image"
               width={312}
               height={312}
-              className="h-36 w-auto md:h-64"
+              className="h-32 w-auto md:h-48"
             />
 
             <h2 className="h2 font-light">
@@ -108,8 +114,8 @@ export default function Homepage() {
               className={cn(
                 buttonVariants({
                   variant: "outline",
-                  size: "sm",
-                  className: "w-max rounded-full px-6",
+                  size: "default",
+                  className: "w-max",
                 }),
               )}
             >
@@ -124,28 +130,18 @@ export default function Homepage() {
               alt="Image"
               width={312}
               height={312}
-              className="h-36 w-auto md:h-64"
+              className="h-32 w-auto md:h-48"
             />
 
             <h2 className="h2 font-light">
               Pelajari keahlian untuk mencapai kesuksesan
             </h2>
 
-            <Link
-              href="/"
-              className={cn(
-                buttonVariants({
-                  variant: "outline",
-                  size: "sm",
-                  className: "w-max rounded-full px-6",
-                }),
-              )}
-            >
-              Pilih topik untuk dipelajari
-            </Link>
+            <SelectTopic />
           </div>
         </div>
       </section>
+      {/* /. Help You With */}
 
       {/* For Who */}
       <section className="overflow-hidden bg-gradient-to-b from-slate-100 from-60% to-transparent to-60% px-4 py-16 md:bg-gradient-to-r">
@@ -215,7 +211,7 @@ export default function Homepage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Join Us */}
       <section className="min-h-[75vh] bg-[url(/bg-1.png)] bg-cover bg-top bg-no-repeat px-4 py-12 md:h-[90vh]">
         <div className="container flex flex-col gap-4">
           <h2 className="h2 font-light">
@@ -236,6 +232,7 @@ export default function Homepage() {
           </Link>
         </div>
       </section>
+      {/* ./ Join Us */}
     </>
   );
 }

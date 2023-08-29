@@ -452,3 +452,163 @@ export const contentBenefits = [
     media: "3.png",
   },
 ];
+
+// Topic to Learn
+export const contentTopicToLearn = [
+  {
+    id: 1,
+    title: "Analisis dan Strategi Bisnis",
+    courseCount: 40,
+    url: "/",
+  },
+  {
+    id: 2,
+    title: "Bisnis dan Kewirausahaan Kecil",
+    courseCount: 0,
+    url: "/",
+  },
+  {
+    id: 3,
+    title: "Keanekaragaman, Kesetaraan, dan Inklusi (DEI)",
+    courseCount: 30,
+    url: "/",
+  },
+  {
+    id: 4,
+    title: "Kepemimpinan dan Manajemen",
+    courseCount: 140,
+    url: "/",
+  },
+  {
+    id: 5,
+    title: "Keuangan dan Akuntansi",
+    courseCount: 10,
+    url: "/",
+  },
+  {
+    id: 6,
+    title: "Layanan Pelanggan",
+    courseCount: 20,
+    url: "/",
+  },
+  {
+    id: 7,
+    title: "Manajemen Proyek",
+    courseCount: 20,
+    url: "/",
+  },
+  {
+    id: 8,
+    title: "Pelatihan dan Pendidikan",
+    courseCount: 0,
+    url: "/",
+  },
+  {
+    id: 9,
+    title: "Pemasaran",
+    courseCount: 10,
+    url: "/",
+  },
+  {
+    id: 10,
+    title: "Pengembangan Karier",
+    courseCount: 20,
+    url: "/",
+  },
+  {
+    id: 11,
+    title: "Pengembangan Profesi",
+    courseCount: 200,
+    url: "/",
+  },
+  {
+    id: 12,
+    title: "Penjualan",
+    courseCount: 10,
+    url: "/",
+  },
+  {
+    id: 13,
+    title: "Perangkat Lunak dan Alat Bisnis",
+    courseCount: 30,
+    url: "/",
+  },
+  {
+    id: 14,
+    title: "Sumber Daya Manusia",
+    courseCount: 30,
+    url: "/",
+  },
+  {
+    id: 15,
+    title: "AEC",
+    courseCount: 0,
+    url: "/",
+  },
+  {
+    id: 16,
+    title: "Desain Grafis",
+    courseCount: 0,
+    url: "/",
+  },
+  {
+    id: 17,
+    title: "Pengalaman Pengguna",
+    courseCount: 0,
+    url: "/",
+  },
+  {
+    id: 18,
+    title: "Administrasi Jaringan dan Sistem",
+    courseCount: 0,
+    url: "/",
+  },
+  {
+    id: 19,
+    title: "DevOps",
+    courseCount: 0,
+    url: "/",
+  },
+  {
+    id: 20,
+    title: "Ilmu Data",
+    courseCount: 30,
+    url: "/",
+  },
+  {
+    id: 21,
+    title: "Keamanan",
+    courseCount: 0,
+    url: "/",
+  },
+  {
+    id: 22,
+    title: "Kecerdasan Buatan (AI)",
+    courseCount: 0,
+    url: "/",
+  },
+  {
+    id: 23,
+    title: "Komputasi Cloud",
+    courseCount: 0,
+    url: "/",
+  },
+  {
+    id: 24,
+    title: "Pengembangan Perangkat Lunak",
+    courseCount: 10,
+    url: "/",
+  },
+  {
+    id: 25,
+    title: "Pengembangan Web",
+    courseCount: 0,
+    url: "/",
+  },
+  {
+    id: 26,
+    title: "Pusat Bantuan TI",
+    courseCount: 0,
+    url: "/",
+  },
+];
