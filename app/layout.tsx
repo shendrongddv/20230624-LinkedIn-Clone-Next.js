@@ -1,18 +1,18 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Oxygen } from "next/font/google";
+import { Roboto } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 
-const fontDisplay = Oxygen({
+const fontDisplay = Roboto({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
+  weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-display",
 });
 
-const fontBody = Oxygen({
+const fontBody = Roboto({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
+  weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-body",
 });
 

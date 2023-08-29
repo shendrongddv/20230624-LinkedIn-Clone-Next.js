@@ -19,7 +19,7 @@ export default function Homepage() {
               Ikuti terus berita, wawasan, dan tren industri terbaru
             </h1>
 
-            <LoginForm />
+            {/* <LoginForm /> */}
           </div>
 
           {/* Col */}

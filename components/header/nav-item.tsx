@@ -9,7 +9,7 @@ import { buttonVariants } from "../ui/button";
 export const NavLists = () => {
   return (
     <nav>
-      <ul className="flex items-center justify-center gap-6">
+      <ul className="flex items-center justify-center gap-2">
         {contentNavMenu?.map((item) => (
           <NavItem
             key={item.id}
@@ -35,10 +35,15 @@ export const NavItem: React.FC<NavItemProps> = ({ label, url, icon: Icon }) => {
       <Link
         href={url}
         aria-label={label}
-        className="flex flex-col items-center gap-1 text-center text-sm font-medium
-      "
+        className={cn(
+          buttonVariants({
+            variant: "outline",
+            size: "sm",
+            className: "",
+          }),
+        )}
       >
-        <Icon className="h-4 w-4" />
+        <Icon className="mr-2 h-4 w-4" />
         {label}
       </Link>
     </li>

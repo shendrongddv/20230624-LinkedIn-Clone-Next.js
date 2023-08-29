@@ -32,6 +32,24 @@ export const contentNavMenu = [
   },
 ];
 
+// NavButton
+export const contentNavButton = [
+  {
+    id: 1,
+    label: "Bergabung Sekarang",
+    url: "/",
+    icon: null,
+    media: null,
+  },
+  {
+    id: 2,
+    label: "Login",
+    url: "/",
+    icon: null,
+    media: null,
+  },
+];
+
 // footerMenu
 export const contentFooterMain = [
   {

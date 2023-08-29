@@ -6,15 +6,15 @@ import { SheetClose } from "../ui/sheet";
 
 export const NavButton = () => {
   return (
-    <div className="flex items-center justify-center gap-2 pl-2">
+    <div className="flex items-center justify-center gap-2">
       {/* # */}
       <Link
         href="/"
         className={cn(
           buttonVariants({
-            variant: "ghost",
+            variant: "outline",
             size: "sm",
-            className: "rounded-full",
+            className: "",
           }),
         )}
       >
@@ -28,7 +28,7 @@ export const NavButton = () => {
           buttonVariants({
             variant: "outline",
             size: "sm",
-            className: "rounded-full",
+            className: "",
           }),
         )}
       >

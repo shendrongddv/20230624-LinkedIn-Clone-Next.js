@@ -11,11 +11,10 @@ import { Menu } from "lucide-react";
 import { SiteLogoNavbar } from "../site-logo";
 
 import { contentNavMenu } from "@/content";
-import Link from "next/link";
 import { MobileNavItem } from "./nav-item";
 import { MobileNavButton } from "./nav-button";
 
-export function MobileToggle() {
+export function MobileNavbar() {
   return (
     <Sheet>
       <SheetTrigger asChild>
