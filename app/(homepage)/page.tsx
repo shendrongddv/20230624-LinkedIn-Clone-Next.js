@@ -1,5 +1,6 @@
 import HomeSlider from "@/components/home-slider";
 import JobCategory from "@/components/job-category";
+import LoginForm from "@/components/login-form";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
@@ -11,16 +12,18 @@ export default function Homepage() {
     <>
       {/* Hero */}
       <section className="px-4 py-16">
-        <div className="container flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+        <div className="container flex flex-col md:flex-row md:items-center md:justify-between">
           {/* Col */}
           <div className="space-y-4 md:w-6/12">
             <h1 className="h1 font-light text-accent-foreground">
-              Temukan pekerjaan melalui komunitas
+              Ikuti terus berita, wawasan, dan tren industri terbaru
             </h1>
+
+            <LoginForm />
           </div>
 
           {/* Col */}
-          <div className="md:w-5/12">
+          <div className="hidden md:flex md:w-5/12">
             <Image
               src="/hero.svg"
               alt="Image"

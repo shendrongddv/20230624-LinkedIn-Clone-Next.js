@@ -90,11 +90,15 @@ h6 {
 }
 
 .h1 {
-  @apply text-4xl max-sm:leading-snug md:text-6xl;
+  font-size: clamp(32px, calc(2rem + ((1vw - 3.6px) * 2.3913)), 54px);
+  font-weight: 300;
+  line-height: normal;
 }
 
 .h2 {
-  @apply text-3xl leading-snug md:text-5xl;
+  font-size: clamp(32px, calc(2rem + ((1vw - 3.6px) * 1.7391)), 48px);
+  font-weight: 300;
+  line-height: normal;
 }
 
 .h3 {
