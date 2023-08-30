@@ -11,6 +11,8 @@ import JobCategory from "@/components/job-category";
 import HomeSlider from "@/components/home-slider";
 import { SelectTopic } from "@/components/select-topic";
 import CollapsibleCategory from "@/components/collapsible-category";
+import LanguageSelect from "@/components/lang-select";
+import SelectLanguage from "@/components/lang-select";
 
 export default function Homepage() {
   return (
@@ -140,6 +142,7 @@ export default function Homepage() {
             </h2>
 
             <SelectTopic />
+            <SelectLanguage />
           </div>
         </div>
       </section>
