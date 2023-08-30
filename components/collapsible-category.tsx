@@ -23,7 +23,7 @@ const CollapsibleCategory = () => {
   return (
     <Collapsible open={isOpen} onOpenChange={setIsOpen} className="space-y-4">
       <ul className="flex flex-wrap gap-2">
-        {isOpen ? (
+        {!isOpen ? (
           <>
             {items.slice(0, 10)?.map((item: any) => (
               <li key={item.id}>
