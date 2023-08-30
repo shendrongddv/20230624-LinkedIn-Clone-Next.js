@@ -72,8 +72,9 @@ const CategoryItem = ({ label, url }: TItem) => {
       className={cn(
         buttonVariants({
           variant: "outline",
-          size: "sm",
-          className: "rounded-full bg-transparent text-xs md:text-sm",
+          size: "default",
+          className:
+            "border-destructive bg-transparent text-muted-foreground hover:bg-destructive hover:text-white",
         }),
       )}
     >

@@ -53,7 +53,7 @@ export default function Homepage() {
 
           {/* Col */}
           <div className="space-y-4 md:w-6/12">
-            <span className="text-sm font-medium uppercase opacity-60">
+            <span className="text-sm font-semibold uppercase text-muted-foreground">
               Saran Pencarian
             </span>
             {/* <JobCategory /> */}
