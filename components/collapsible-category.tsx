@@ -74,7 +74,7 @@ const CategoryItem = ({ label, url }: TItem) => {
           variant: "outline",
           size: "default",
           className:
-            "border-destructive bg-transparent text-muted-foreground hover:bg-destructive hover:text-white",
+            "rounded-full border-accent-foreground bg-transparent text-accent-foreground hover:bg-accent-foreground hover:text-white",
         }),
       )}
     >
