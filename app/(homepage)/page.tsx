@@ -10,6 +10,7 @@ import { ChevronRight } from "lucide-react";
 import JobCategory from "@/components/job-category";
 import HomeSlider from "@/components/home-slider";
 import { SelectTopic } from "@/components/select-topic";
+import CollapsibleCategory from "@/components/collapsible-category";
 
 export default function Homepage() {
   return (
@@ -55,7 +56,8 @@ export default function Homepage() {
             <span className="text-sm font-medium uppercase opacity-60">
               Saran Pencarian
             </span>
-            <JobCategory />
+            {/* <JobCategory /> */}
+            <CollapsibleCategory />
           </div>
         </div>
       </section>

@@ -39,7 +39,7 @@ export const SelectTopic = () => {
 
 function TopicList() {
   return (
-    <ScrollArea className="h-[50vh] p-0">
+    <ScrollArea className="h-[50vh] w-full p-0">
       <ul className="space-y-1 px-1">
         {contentTopicToLearn?.map((item) => (
           <li key={item.id}>

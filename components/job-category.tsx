@@ -1,8 +1,10 @@
+import Link from "next/link";
+
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
+
 // Contents
 import { contentJobCategory } from "@/content";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { buttonVariants } from "./ui/button";
 
 const JobCategory = () => {
   return (
