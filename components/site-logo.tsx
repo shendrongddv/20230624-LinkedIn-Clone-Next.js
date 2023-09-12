@@ -39,7 +39,7 @@ export const SiteLogoFooterBottom = () => {
         alt="LinkedIn"
         width={135}
         height={34}
-        className="h-3 w-auto grayscale"
+        className="h-4 w-auto grayscale"
       />
     </Link>
   );

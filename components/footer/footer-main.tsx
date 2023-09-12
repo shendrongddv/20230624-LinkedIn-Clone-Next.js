@@ -1,10 +1,11 @@
 import Link from "next/link";
 
 // Components
-import { SiteLogoFooterBottom, SiteLogoFooterMain } from "../site-logo";
+import { SiteLogoFooterMain } from "../site-logo";
+import { FooterBottom } from "./footer-bottom";
 
 // Contents
-import { contentFooterMain, contentFooterBottom } from "@/content";
+import { contentFooterMain } from "@/content";
 
 const FooterMain = () => {
   return (
@@ -42,23 +43,9 @@ const FooterMain = () => {
 
       {/* Footer Bottom */}
       <div className="px-4 py-6">
-        <ul className="container grid grid-cols-2 gap-2 md:flex md:flex-wrap md:items-center md:gap-x-4">
-          <li className="flex flex-1 items-center gap-1 text-xs text-muted-foreground">
-            <SiteLogoFooterBottom />© 2023
-          </li>
-
-          {contentFooterBottom?.map((item) => (
-            <li key={item.id}>
-              <Link
-                href={item.url}
-                aria-label={item.label}
-                className="text-center text-xs text-muted-foreground hover:underline"
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="container md:flex md:justify-between md:gap-4">
+          <FooterBottom />
+        </div>
       </div>
     </footer>
   );

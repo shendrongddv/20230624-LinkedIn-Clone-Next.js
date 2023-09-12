@@ -10,6 +10,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
 
 // Contents
 const contentLanguages = [
@@ -75,13 +77,25 @@ const SelectLanguage = () => {
 
   return (
     <Select value={language} onValueChange={setLanguage}>
-      <SelectTrigger className="w-full justify-between gap-2 md:w-max">
+      <SelectTrigger
+        className={cn(
+          buttonVariants({
+            variant: "outline",
+            size: "sm",
+            className: "justify-between gap-2 text-xs text-muted-foreground",
+          }),
+        )}
+      >
         <SelectValue placeholder="Select language..." />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
           {contentLanguages?.map((item) => (
-            <SelectItem key={item.id} value={item.lang}>
+            <SelectItem
+              key={item.id}
+              value={item.lang}
+              className="text-xs text-muted-foreground"
+            >
               {item.lang}
             </SelectItem>
           ))}
